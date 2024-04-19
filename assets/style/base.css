@@ -1,0 +1,13 @@
+html, body{
+    font-family: "source-sans-3";
+}
+
+main{
+    background-color: var(--color-grey);
+    padding: 20px;
+}
+h2{
+    border: solid 3px black;
+    padding: 10px;
+    margin: 10px;
+}
