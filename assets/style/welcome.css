@@ -1,0 +1,10 @@
+.welcome{
+    background-color:orange;
+    padding: 20px;
+    margin: var(--m);
+}
+.welcome > p {
+    padding:5px 0;
+    text-align: left;
+    text-decoration: none;
+}
