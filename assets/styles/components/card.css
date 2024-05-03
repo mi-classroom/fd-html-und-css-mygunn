@@ -1,0 +1,38 @@
+/* Card Grid
+############################################################################ */
+
+
+.card-grid {
+  display: grid;
+  gap: var(--s);
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+
+  li {
+    overflow: hidden;
+    padding-bottom: var(--quarter);
+    background-color: var(--color-white);
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    figcaption {
+      padding: var(--s) var(--s) var(--eighth) var(--s);
+    }
+
+    h3 {
+      padding: 0;
+      margin: 0;
+      font-weight: var(--fw-bold);
+    }
+
+    address {
+      margin-bottom: var(--s);
+    }
+
+  }
+
+}

@@ -1,0 +1,68 @@
+
+.keyword-search {
+  display: flex;
+  flex-grow: 2;
+  
+  &:has(input:focus, input:focus-visible, input:focus-within){
+    outline: solid 1px var(--color-th-orange);
+  }
+
+  input{
+    flex-grow: 2;
+    padding: var(--half) var(--xs);
+    border: none;
+    
+    &:focus, &:focus-visible, &:focus-within{
+      border: none;
+      outline: none;
+    }
+  }
+
+  button{
+    padding: var(--half);
+    border: none;
+    background-color: var(--color-th-orange);
+    color: var(--color-white);
+    cursor: pointer;
+
+    .icon{
+      margin-right: 0;
+      color: var(--color-white);
+    }
+  }
+}
+
+/* Responsive Visibility
+############################################################################ */
+
+main{
+  /* stylelint-disable-next-line no-descending-specificity */
+  .keyword-search{
+    display: flex;
+  }
+}
+
+.main-header{
+  /* stylelint-disable-next-line no-descending-specificity */
+  .keyword-search{
+    display: none;
+
+    input{
+      background-color: var(--color-grey);
+    }
+  }
+}
+
+@media only screen and (width >= 50rem) {
+  main{
+    .keyword-search{
+      display: none;
+    }
+  }
+
+  .main-header{
+    .keyword-search{
+      display: flex;
+    }
+  }
+}

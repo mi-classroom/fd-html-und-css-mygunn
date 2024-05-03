@@ -1,0 +1,20 @@
+/* Hero
+############################################################################ */
+.hero {
+  padding: var(--m) var(--m) var(--xl) var(--m);
+  background-color: var(--color-th-orange);
+  color: var(--color-white);
+
+  *{
+    max-width: var(--max-text-width);
+  }
+  
+  h2,
+  h3 {
+    font-size: var(--xl);
+  }
+
+  a {
+    color: var(--color-white);
+  }
+}

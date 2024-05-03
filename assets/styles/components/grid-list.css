@@ -1,0 +1,44 @@
+/* Grid List
+############################################################################ */
+
+.grid-list, .grid-list-inline {
+  display: grid;
+  gap: var(--s);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  
+  li {
+    position: relative;
+    overflow: hidden;
+    align-content: center;
+    padding: var(--s) var(--m) var(--s) var(--s);
+    background-color: var(--color-white);
+    line-height: var(--lh-tight);
+
+    address {
+      font-size: var(--s);
+    }
+
+    &.has-icon {
+      padding-left: calc(var(--xl) + var(--m));
+    }
+
+    p {
+      overflow: hidden;
+      margin-bottom: 0;
+      text-overflow: ellipsis " …";
+      white-space: nowrap;
+    }
+  }
+
+  &.grid-list-inline {
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+

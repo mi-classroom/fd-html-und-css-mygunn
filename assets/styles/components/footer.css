@@ -1,0 +1,35 @@
+/* Main Footer
+############################################################################ */
+
+.main-footer {
+  display: grid;
+  max-width: var(--max-content-width);
+  padding: 0 var(--m);
+  background-color: var(--color-grey-dark);
+  color: var(--color-white);
+  gap: var(--s);
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+
+  h2 {
+    margin-bottom: var(--quarter);
+    font-size: var(--m);
+  }
+
+  ul {
+    margin-bottom: var(--m);
+
+    li {
+      font-weight: var(--fw-light);
+
+      &::before {
+        margin-right: var(--half);
+        content: "»";
+        font-size: var(--xl);
+        font-weight: var(--fw-regular);
+        line-height: 90%;
+        vertical-align: bottom;
+      }
+    }
+  }
+
+}

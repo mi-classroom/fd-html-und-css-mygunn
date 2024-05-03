@@ -1,0 +1,43 @@
+
+/* Tag List
+############################################################################ */
+
+.tag-list {
+  li {
+    display: inline-block;
+    padding: var(--eighth) var(--half);
+    margin-bottom: 0;
+    margin-bottom: var(--eighth);
+    background-color: var(--color-grey);
+    font-size: var(--s);
+    transition: all var(--tr-fast);
+
+    &:hover {
+      background-color: var(--color-grey-dark);
+      color: var(--color-white);
+      cursor: pointer;
+    }
+  }
+}
+
+/* Tag List Wrapper
+############################################################################ */
+
+.tag-list-wrapper{
+  position: relative;
+  overflow: hidden;
+
+  &::after{
+    position: sticky;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    width: 20px;
+    background: linear-gradient(90deg, rgb(255 255 255 / 0%) 55%, rgb(255 255 255 / 100%) 100%);
+    content: "";
+  }
+
+  .tag-list{
+    width: max-content;
+  }
+}

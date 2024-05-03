@@ -1,0 +1,46 @@
+
+
+/* Dropdown
+############################################################################ */
+
+.dropdown {
+  position: relative;
+  margin-right: var(--m);
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:focus-within, &:focus-visible, &:focus{
+    * {
+      display: block !important;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: var(--m);
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: top;
+    direction: ltr;
+    font-family: var(--ff-icons);
+    font-feature-settings: "liga";
+    font-size: var(--l);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-weight: normal;
+    justify-self: center;
+    letter-spacing: normal;
+    line-height: inherit;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    vertical-align: bottom;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+}

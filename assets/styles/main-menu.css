@@ -1,0 +1,19 @@
+.main-menu {
+    display: flex;
+    gap: var(--l);
+    flex-direction: column;
+    position: fixed;
+    padding: var(--xl);
+    background-color: var(--color-grey);
+    height: calc(100vh - var(--xl) * 2);
+    width: 200px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: transform var(--tr-normal);
+  
+    &.is-active{
+      transform: translateX(0);
+    }
+  }

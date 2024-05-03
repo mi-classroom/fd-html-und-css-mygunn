@@ -1,0 +1,6 @@
+/* Main Header
+############################################################################ */
+.main-header {
+  padding: var(--m);
+  background-color: var(--color-white);
+}

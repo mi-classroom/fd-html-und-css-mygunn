@@ -1,0 +1,7 @@
+.hidden {
+    transform: translateX(-100%);
+}
+
+.hamburger.close:before {
+    content: '\00D7'; /* Unicode für das X-Symbol */
+}
